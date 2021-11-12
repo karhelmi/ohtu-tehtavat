@@ -1,0 +1,11 @@
+// Ohtu viikko2, tehtävä 10 -- Luokkakaavio
+// ------------------
+[main]>[kauppa]
+[main]>[kirjanpito]
+[kauppa]>[varasto] POISTA > DEFAULT_varasto
+[kauppa]>[pankki] POISTA > DEFAULT-pankki
+[kauppa]>[ostoskori] VOI JÄÄDÄ
+[kauppa]>[viitegeneraattori] POISTA > DEFAULT viite-generaattori
+[pankki]>[kirjanpito] POISTA TÄMÄ MYÖS > DEFUALT kirjanpito
+[varasto]>[tuote]
+[varasto]>[kirjanpito] POISTA TÄMÄ MYÖS > DEFAULT kirjanpito
