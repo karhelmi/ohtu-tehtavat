@@ -1,6 +1,5 @@
 import unittest
 from ostoskori import Ostoskori
-from ostos import Ostos
 from tuote import Tuote
 
 class TestOstoskori(unittest.TestCase):
