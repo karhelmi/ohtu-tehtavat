@@ -20,11 +20,14 @@ class Ostoskori:
         for self.ostos in self.ostoskori:      
             ostoskorin_hinta += self.ostos.hinta()
         return ostoskorin_hinta
+        #for self.ostos in self.ostoskori:      
+        #    ostoskorin_hinta += self.ostos.hinta()
+        #return ostoskorin_hinta
         # kertoo korissa olevien ostosten yhteenlasketun hinnan
 
     def lisaa_tuote(self, lisattava: Tuote):
-        lisatty_ostos = self.ostos(lisattava)
-        self.ostoskori.append(lisatty_ostos)
+        lisatty_ostosolio = self.ostos(lisattava)
+        self.ostoskori.append(lisatty_ostosolio)
 
     def poista_tuote(self, poistettava: Tuote):
         # poistaa tuotteen
